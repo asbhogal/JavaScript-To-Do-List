@@ -32,10 +32,62 @@
                 <h3>Select a category</h3>
                 <div class="options">
                     <label>
-                        <input type="text" id="category-business">
+                        <input 
+                            type="radio" 
+                            name="category" 
+                            id="category-personal" 
+                            value="personal">
+                        <span class="bubble personal"></span>
+                        <div>Personal</div>
+                    </label>
+                    <label>
+                        <input 
+                            type="radio" 
+                            name="category" 
+                            id="category-business" 
+                            value="business">
+                        <span class="bubble business"></span>
+                        <div>Business</div>
                     </label>
                 </div>
+                <input type="submit" value="+">
             </form>
+        </section>
+
+        <section class="to-do-list">
+            <h3>To Do</h3>
+            <div class="list" id="to-do-list">
+                <div class="to-do-item">
+                    <label>
+                        <input type="checkbox">
+                        <span class="bubble business"></span>
+                    </label>
+
+                    <div class="to-do-content">
+                        <input type="text" value="Submit annual reports" readonly>
+                    </div>
+
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div>
+                <div class="to-do-item">
+                    <label>
+                        <input type="checkbox">
+                        <span class="bubble personal"></span>
+                    </label>
+
+                    <div class="to-do-content">
+                        <input type="text" value="Buy pet food" readonly>
+                    </div>
+
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 </body>

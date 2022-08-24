@@ -1,1 +1,14 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Cantarell&family=Oxygen&family=Ubuntu:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #1c092a;
+}
+
+h1 {
+  font-family: "Ubuntu", sans-serif;
+}/*# sourceMappingURL=style.css.map */

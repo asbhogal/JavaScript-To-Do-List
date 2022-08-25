@@ -31,6 +31,13 @@
             height: 15px;
         }        
     }
+    input[type=text] {
+        background-color: transparent !important;
+        border: none;
+        border-bottom: 2px solid $secondary-color;
+        color: red;
+        height: 40px;
+    }
     #horizontal-line {
         height: 3px;
         background-color: $secondary-color;
@@ -48,7 +55,7 @@
     }
     [id*="option"] {
         border-radius: $border-radius;
-        padding: 10px 40px;
+        padding: 15px 45px;
         cursor: pointer;
         transition: $transition-03;
         &:hover {

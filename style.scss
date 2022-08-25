@@ -15,12 +15,6 @@
             padding-right: 5px;
         }
     }
-    #horizontal-line {
-        height: 3px;
-        background-color: $secondary-color;
-        border: none;
-        margin: 10px 0;
-        }
     .to-do-list {
         text-align: center;
         }
@@ -33,14 +27,21 @@
                 width: 115% !important;
             }
         }
-}
-
-#spacer {
-    height: 15px;
-}
-
-#new-to-do-form {
+        #spacer {
+            height: 15px;
+        }        
+    }
+    #horizontal-line {
+        height: 3px;
+        background-color: $secondary-color;
+        border: none;
+        margin: 10px 0;
+        }
+    #new-to-do-form {
     text-align: center;
+    [id="content"] {
+        width: 100%;
+    }
     > .options {
     display: $flex-display;
     justify-content: space-between;
@@ -68,5 +69,9 @@
         height: 25px;
     }
 }
+
+
+
+
 
 

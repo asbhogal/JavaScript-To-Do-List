@@ -37,12 +37,6 @@ body {
 .app .create-to-do > #date-and-time #separator {
   padding-right: 5px;
 }
-.app #horizontal-line {
-  height: 3px;
-  background-color: #ddd;
-  border: none;
-  margin: 10px 0;
-}
 .app .to-do-list {
   text-align: center;
 }
@@ -55,13 +49,22 @@ body {
 .app .list > .to-do-item input {
   width: 115% !important;
 }
-
-#spacer {
+.app #spacer {
   height: 15px;
+}
+
+#horizontal-line {
+  height: 3px;
+  background-color: #ddd;
+  border: none;
+  margin: 10px 0;
 }
 
 #new-to-do-form {
   text-align: center;
+}
+#new-to-do-form [id=content] {
+  width: 100%;
 }
 #new-to-do-form > .options {
   display: flex;

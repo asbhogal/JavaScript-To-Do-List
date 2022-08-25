@@ -1,2 +1,50 @@
 @import 'partials/globals', 'partials/responsive', 'partials/typography', 'partials/variables';
 
+.app {
+    flex-direction: column;
+    align-items: center;
+    .greeting {
+        text-align: center;
+    }
+    .create-to-do > #date-and-time {
+        display: $flex-display;
+        flex-direction: row;
+        #currentDate,
+        #currentTime,
+        #separator {
+            padding-right: 5px;
+        }
+    }
+    #horizontal-line {
+        height: 3px;
+        background-color: $secondary-color;
+        border: none;
+        margin: 10px 0;
+    }
+    .to-do-list {
+        text-align: center;
+    }
+}
+
+#spacer {
+    height: 15px;
+}
+
+#new-to-do-form {
+    text-align: center;
+    > .options {
+    display: $flex-display;
+    [id*="option"] {
+        border-radius: $border-radius;
+        padding: 20px 50px;
+        cursor: pointer;
+    }
+    #personal-category-option {
+        background-color: $accent-color-1;
+    }
+    #business-category-option {
+        background-color: $accent-color-2;
+    }
+}
+}
+

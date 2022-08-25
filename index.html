@@ -11,27 +11,37 @@
 <body>
     <main class="app">
         <section class="greeting">
-            <h3>To Do List</h3>
-            <h2 class="title">
+            <div id="spacer"></div>
+            <h2>To Do List</h2>
+            <div id="spacer"></div>
+            <h3 class="title">
                 Hello, <input 
                             type="text" 
                             id="name" 
                             placeholder="please type your name here">
-            </h2>
+            </h3>
+            <div id="spacer"></div>
         </section>
-        <section class="create-todo">
-            <p>The date is <span id="currentDate"></span></p>
-            <p>The time is <span id="currentTime"></span></p>
+        <section class="create-to-do">
+            <div id="date-and-time">
+                <p>The date is <span id="currentDate"></span></p>
+                <p id="separator">&#124;</p>
+                <p>The time is <span id="currentTime"></span></p>
+            </div>
+            <hr id="horizontal-line">
             <form id="new-to-do-form">
                 <p>What's on your to do list for today?</p>
+                <div id="spacer"></div>
                 <input 
                     type="text" 
                     name="content" 
                     id="content" 
                     placeholder="e.g. Buy milk from the store">
+                <div id="spacer"></div>
                 <h3>Select a category</h3>
+                <div id="spacer"></div>
                 <div class="options">
-                    <label>
+                    <label id="personal-category-option">
                         <input 
                             type="radio" 
                             name="category" 
@@ -40,7 +50,7 @@
                         <span class="bubble personal"></span>
                         <div>Personal</div>
                     </label>
-                    <label>
+                    <label id="business-category-option">
                         <input 
                             type="radio" 
                             name="category" 
@@ -50,12 +60,15 @@
                         <div>Business</div>
                     </label>
                 </div>
+                <div id="spacer"></div>
                 <input type="submit" value="+">
+                <div id="spacer"></div>
             </form>
         </section>
 
         <section class="to-do-list">
             <h3>To Do</h3>
+            <div id="spacer"></div>
             <div class="list" id="to-do-list">
                 <div class="to-do-item">
                     <label>
@@ -72,6 +85,7 @@
                         <button class="delete">Delete</button>
                     </div>
                 </div>
+                <div id="spacer"></div>
                 <div class="to-do-item">
                     <label>
                         <input type="checkbox">

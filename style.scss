@@ -20,10 +20,19 @@
         background-color: $secondary-color;
         border: none;
         margin: 10px 0;
-    }
+        }
     .to-do-list {
         text-align: center;
-    }
+        }
+        .list > .to-do-item {
+            display: $flex-display;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            input {
+                width: 115% !important;
+            }
+        }
 }
 
 #spacer {
@@ -34,10 +43,18 @@
     text-align: center;
     > .options {
     display: $flex-display;
+    justify-content: space-between;
+    }
     [id*="option"] {
         border-radius: $border-radius;
-        padding: 20px 50px;
+        padding: 10px 40px;
         cursor: pointer;
+        transition: $transition-03;
+        &:hover {
+            transition: $transition-03;
+            background-color: rgba(33, 5, 52, 0.508);
+            box-shadow: 2px 2px 5px 2px rgb(61, 20, 93);
+        }
     }
     #personal-category-option {
         background-color: $accent-color-1;
@@ -45,6 +62,11 @@
     #business-category-option {
         background-color: $accent-color-2;
     }
+    input[type=submit] {
+        width: 100%;
+        cursor: pointer;
+        height: 25px;
+    }
 }
-}
+
 

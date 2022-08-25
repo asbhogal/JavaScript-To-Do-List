@@ -46,6 +46,15 @@ body {
 .app .to-do-list {
   text-align: center;
 }
+.app .list > .to-do-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.app .list > .to-do-item input {
+  width: 115% !important;
+}
 
 #spacer {
   height: 15px;
@@ -56,15 +65,27 @@ body {
 }
 #new-to-do-form > .options {
   display: flex;
+  justify-content: space-between;
 }
-#new-to-do-form > .options [id*=option] {
+#new-to-do-form [id*=option] {
   border-radius: 5px;
-  padding: 20px 50px;
+  padding: 10px 40px;
   cursor: pointer;
+  transition: 0.5s all ease-in;
 }
-#new-to-do-form > .options #personal-category-option {
+#new-to-do-form [id*=option]:hover {
+  transition: 0.5s all ease-in;
+  background-color: rgba(33, 5, 52, 0.508);
+  box-shadow: 2px 2px 5px 2px rgb(61, 20, 93);
+}
+#new-to-do-form #personal-category-option {
   background-color: #360e52;
 }
-#new-to-do-form > .options #business-category-option {
+#new-to-do-form #business-category-option {
   background-color: #541780;
+}
+#new-to-do-form input[type=submit] {
+  width: 100%;
+  cursor: pointer;
+  height: 25px;
 }/*# sourceMappingURL=style.css.map */

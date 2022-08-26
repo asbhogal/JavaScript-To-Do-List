@@ -3,6 +3,11 @@
 .app {
     flex-direction: column;
     align-items: center;
+    border: 1px solid #000;
+    border-radius: $border-radius;
+    padding: 30px 40px;
+    box-shadow: 0 10px 20px #11111129;
+    width: 600px;
     .greeting {
         text-align: center;
     }
@@ -24,7 +29,7 @@
             justify-content: space-between;
             width: 100%;
             input {
-                width: 115% !important;
+                width: auto;
             }
         }
         #spacer {
@@ -75,4 +80,14 @@
         cursor: pointer;
         height: 25px;
     }
+}
+
+button {
+    border-radius: $border-radius;
+    padding: 5px 10px;
+}
+
+button.edit {
+    background-color: $font-color;
+
 }

@@ -24,6 +24,11 @@ body {
 .app {
   flex-direction: column;
   align-items: center;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 30px 40px;
+  box-shadow: 0 10px 20px rgba(17, 17, 17, 0.1607843137);
+  width: 600px;
 }
 .app .greeting {
   text-align: center;
@@ -47,7 +52,7 @@ body {
   width: 100%;
 }
 .app .list > .to-do-item input {
-  width: 115% !important;
+  width: auto;
 }
 .app #spacer {
   height: 15px;
@@ -82,10 +87,10 @@ input[type=text] {
   border-radius: 5px;
   padding: 15px 45px;
   cursor: pointer;
-  transition: 0.5s all ease-in;
+  transition: 0.3s all ease-in;
 }
 #new-to-do-form [id*=option]:hover {
-  transition: 0.5s all ease-in;
+  transition: 0.3s all ease-in;
   background-color: rgba(33, 5, 52, 0.508);
   box-shadow: 2px 2px 5px 2px rgb(61, 20, 93);
 }
@@ -99,4 +104,13 @@ input[type=text] {
   width: 100%;
   cursor: pointer;
   height: 25px;
+}
+
+button {
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+button.edit {
+  background-color: #f3e8ff;
 }/*# sourceMappingURL=style.css.map */

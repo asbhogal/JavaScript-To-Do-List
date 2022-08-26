@@ -24,7 +24,7 @@ body {
 .app {
   flex-direction: column;
   align-items: center;
-  border: 1px solid #401783;
+  border: 2px solid #401783;
   border-radius: 5px;
   padding: 30px 40px;
   box-shadow: 0 20px 40px rgba(88, 20, 161, 0.1607843137);
@@ -96,7 +96,7 @@ input[type=text] {
 #new-to-do-form [id*=option]:hover {
   transition: 0.3s all ease-in;
   background-color: rgba(33, 5, 52, 0.5098039216);
-  box-shadow: 0 5px 2px #3d145d;
+  box-shadow: 0 1px 1px #401783;
 }
 #new-to-do-form #personal-category-option {
   background-color: #360e52;

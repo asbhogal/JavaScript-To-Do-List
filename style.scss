@@ -3,7 +3,7 @@
 .app {
     flex-direction: column;
     align-items: center;
-    border: 1px solid #401783;
+    border: $main-border;
     border-radius: $border-radius;
     padding: 30px 40px;
     box-shadow: 0 20px 40px #5814a129;
@@ -70,7 +70,7 @@
         &:hover {
             transition: $transition-03;
             background-color: #21053482;
-            box-shadow: 0 5px 2px #3d145d;
+            box-shadow: 0 1px 1px #401783;
         }
     }
     #personal-category-option {

@@ -3,10 +3,10 @@
 .app {
     flex-direction: column;
     align-items: center;
-    border: 1px solid #000;
+    border: 1px solid #401783;
     border-radius: $border-radius;
     padding: 30px 40px;
-    box-shadow: 0 10px 20px #11111129;
+    box-shadow: 0 20px 40px #5814a129;
     width: 600px;
     .greeting {
         text-align: center;
@@ -14,6 +14,7 @@
     .create-to-do > #date-and-time {
         display: $flex-display;
         flex-direction: row;
+        justify-content: center;
         #currentDate,
         #currentTime,
         #separator {
@@ -40,7 +41,7 @@
         background-color: transparent !important;
         border: none;
         border-bottom: 2px solid $secondary-color;
-        color: red;
+        color: $font-color;
         height: 40px;
     }
     #horizontal-line {
@@ -51,6 +52,9 @@
         }
     #new-to-do-form {
     text-align: center;
+    #question {
+        font-size: 21px;
+    }
     [id="content"] {
         width: 100%;
     }
@@ -60,13 +64,13 @@
     }
     [id*="option"] {
         border-radius: $border-radius;
-        padding: 15px 45px;
+        padding: 15px 55px;
         cursor: pointer;
         transition: $transition-03;
         &:hover {
             transition: $transition-03;
-            background-color: rgba(33, 5, 52, 0.508);
-            box-shadow: 2px 2px 5px 2px rgb(61, 20, 93);
+            background-color: #21053482;
+            box-shadow: 0 5px 2px #3d145d;
         }
     }
     #personal-category-option {
@@ -75,19 +79,31 @@
     #business-category-option {
         background-color: $accent-color-2;
     }
+    #myday-category-option {
+        background-color: $accent-color-3;;
+    }
     input[type=submit] {
         width: 100%;
         cursor: pointer;
-        height: 25px;
+        padding: 10px 25px;
+        border-radius: $border-radius;
     }
 }
 
 button {
     border-radius: $border-radius;
     padding: 5px 10px;
+    cursor: pointer;
 }
 
 button.edit {
     background-color: $font-color;
 
+}
+
+input {
+    caret-color: $font-color;
+    &:active {
+        border: 0;
+    }
 }

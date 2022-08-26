@@ -28,9 +28,10 @@
                 <p id="separator">&#124;</p>
                 <p>The time is <span id="currentTime"></span></p>
             </div>
-            <hr id="horizontal-line">
+            <!--<hr id="horizontal-line">-->
+            <div id="spacer"></div>
             <form id="new-to-do-form">
-                <p>What's on your to do list for today?</p>
+                <p id="question">What's on your to do list for today?</p>
                 <div id="spacer"></div>
                 <input 
                     type="text" 
@@ -49,6 +50,15 @@
                             value="personal">
                         <span class="bubble personal"></span>
                         <div>Personal</div>
+                    </label>
+                    <label id="myday-category-option">
+                        <input 
+                            type="radio" 
+                            name="category" 
+                            id="category-myday" 
+                            value="myday">
+                        <span class="bubble myday"></span>
+                        <div>My Day</div>
                     </label>
                     <label id="business-category-option">
                         <input 

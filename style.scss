@@ -19,12 +19,20 @@
     }    
     input {
         caret-color: $font-color;
+        outline: none;
         &:active {
             border: 0;
         }
     }    
     .greeting {
         text-align: center;
+        input {
+            flex: 1 1 0%;
+            min-width: 0;
+            width: 50%;
+            padding-left: 2px;
+            font-size: 18px;
+        }
     }
     .create-to-do > #date-and-time {
         display: $flex-display;
@@ -57,6 +65,7 @@
             }
             input {
                 width: 80%;
+                pointer-events: none;
             }
         }
         .to-do-content {
@@ -86,6 +95,7 @@
     }
     [id="content"] {
         width: 100%;
+        font-size: 16px;
     }
     > .options {
     display: $flex-display;
@@ -122,4 +132,31 @@
             transition: $transition-03;
         }
     }
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    display: none;
+}
+
+.bubble {
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    border: $main-border;
+    height: 20px;
+    width: 20px;
+    box-shadow: 0 20px 40px #5814a129;
+    cursor: pointer;
+    &::after {
+        background-color: $accent-color-2;
+        box-shadow: 0 20px 40px #5814a129;
+        transition: $transition-03;
+    }
+}
+
+input:checked ~ .bubble::after {
+    width: 10px;
+    height: 10px;
+    opacity: 1;
 }

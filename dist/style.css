@@ -30,6 +30,20 @@ body {
   box-shadow: 0 20px 40px rgba(88, 20, 161, 0.1607843137);
   width: 600px;
 }
+.app button {
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.app button .edit {
+  background-color: #e9e9e9;
+}
+.app input {
+  caret-color: #e9e9e9;
+}
+.app input:active {
+  border: 0;
+}
 .app .greeting {
   text-align: center;
 }
@@ -52,8 +66,22 @@ body {
   justify-content: space-between;
   width: 100%;
 }
+.app .list > .to-do-item .actions {
+  display: inline-flex;
+  transition: 0.3s all ease-in;
+}
+.app .list > .to-do-item .actions button {
+  transition: 0.3s all ease-in;
+}
+.app .list > .to-do-item .actions button:hover {
+  transform: scale(1.05);
+  transition: 0.3s all ease-in;
+}
 .app .list > .to-do-item input {
-  width: auto;
+  width: 80%;
+}
+.app .to-do-content {
+  width: 100%;
 }
 .app #spacer {
   height: 15px;
@@ -95,8 +123,7 @@ input[type=text] {
 }
 #new-to-do-form [id*=option]:hover {
   transition: 0.3s all ease-in;
-  background-color: rgba(33, 5, 52, 0.5098039216);
-  box-shadow: 0 1px 1px #401783;
+  transform: scale(1.02);
 }
 #new-to-do-form #personal-category-option {
   background-color: #360e52;
@@ -112,21 +139,10 @@ input[type=text] {
   cursor: pointer;
   padding: 10px 25px;
   border-radius: 5px;
+  background-color: #ddd;
+  transition: 0.3s all ease-in;
 }
-
-button {
-  border-radius: 5px;
-  padding: 5px 10px;
-  cursor: pointer;
-}
-
-button.edit {
-  background-color: #e9e9e9;
-}
-
-input {
-  caret-color: #e9e9e9;
-}
-input:active {
-  border: 0;
+#new-to-do-form input[type=submit]:hover {
+  transform: scale(1.05);
+  transition: 0.3s all ease-in;
 }/*# sourceMappingURL=style.css.map */

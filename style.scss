@@ -8,6 +8,21 @@
     padding: 30px 40px;
     box-shadow: 0 20px 40px #5814a129;
     width: 600px;
+    button {
+        border-radius: $border-radius;
+        padding: 5px 10px;
+        cursor: pointer;
+        .edit {
+            background-color: $font-color;
+        
+        }
+    }    
+    input {
+        caret-color: $font-color;
+        &:active {
+            border: 0;
+        }
+    }    
     .greeting {
         text-align: center;
     }
@@ -29,9 +44,23 @@
             align-items: center;
             justify-content: space-between;
             width: 100%;
-            input {
-                width: auto;
+            .actions {
+                display: inline-flex;
+                transition: $transition-03;
+                button {
+                    transition: $transition-03;
+                    &:hover {
+                    transform: scale(1.05);
+                    transition: $transition-03;
+                    }
+                }
             }
+            input {
+                width: 80%;
+            }
+        }
+        .to-do-content {
+            width: 100%;
         }
         #spacer {
             height: 15px;
@@ -69,8 +98,7 @@
         transition: $transition-03;
         &:hover {
             transition: $transition-03;
-            background-color: #21053482;
-            box-shadow: 0 1px 1px #401783;
+            transform: scale(1.02);
         }
     }
     #personal-category-option {
@@ -87,23 +115,11 @@
         cursor: pointer;
         padding: 10px 25px;
         border-radius: $border-radius;
-    }
-}
-
-button {
-    border-radius: $border-radius;
-    padding: 5px 10px;
-    cursor: pointer;
-}
-
-button.edit {
-    background-color: $font-color;
-
-}
-
-input {
-    caret-color: $font-color;
-    &:active {
-        border: 0;
+        background-color: $secondary-color;
+        transition: $transition-03;
+        &:hover {
+            transform: scale(1.05);
+            transition: $transition-03;
+        }
     }
 }

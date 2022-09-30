@@ -1,4 +1,11 @@
+<div align="center">
+  
 <h1>JavaScript To Do List</h1>
+
+![GitHub deployments](https://img.shields.io/github/deployments/asbhogal/JavaScript-To-Do-List/production?label=DEPLOYMENT%20STATE&style=for-the-badge&labelColor=000) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/asbhogal/JavaScript-To-Do-List?style=for-the-badge&labelColor=000) ![GitHub repo size](https://img.shields.io/github/repo-size/asbhogal/JavaScript-To-Do-List?color=blueviolet&style=for-the-badge&labelColor=000)
+
+</div>
+
 
 A to-do list created using vanilla HTML5, CSS3 (SCSS) and JavaScript. The list is fully responsive and optimised for the web. This repo is currently under development.
 

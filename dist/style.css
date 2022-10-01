@@ -89,6 +89,10 @@ body {
 }
 .app .list > .to-do-item .actions button:hover {
   transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
   transition: 0.3s all ease-in;
   -webkit-transition: 0.3s all ease-in;
   -moz-transition: 0.3s all ease-in;
@@ -149,6 +153,10 @@ input[type=text] {
   -moz-transition: 0.3s all ease-in;
   -o-transition: 0.3s all ease-in;
   transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
 }
 #new-to-do-form #personal-category-option {
   background-color: #360e52;
@@ -172,6 +180,10 @@ input[type=text] {
 }
 #new-to-do-form input[type=submit]:hover {
   transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
   transition: 0.3s all ease-in;
   -webkit-transition: 0.3s all ease-in;
   -moz-transition: 0.3s all ease-in;

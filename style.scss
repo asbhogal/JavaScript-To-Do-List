@@ -64,7 +64,11 @@
                     -moz-transition:    $transition-03;
                     -o-transition:      $transition-03;
                     &:hover {
-                    transform: scale(1.05);
+                    transform:          scale(1.05);
+                    -webkit-transform:  scale(1.05);
+                    -moz-transform: 	scale(1.05);
+                    -ms-transform: 		scale(1.05);
+                    -o-transform:       scale(1.05);
                     transition:         $transition-03;
                     -webkit-transition: $transition-03;
                     -moz-transition:    $transition-03;
@@ -123,7 +127,11 @@
             -webkit-transition: $transition-03;
             -moz-transition:    $transition-03;
             -o-transition:      $transition-03;
-            transform: scale(1.02);
+            transform:          scale(1.02);
+            -webkit-transform:  scale(1.02);
+            -moz-transform: 	scale(1.02);
+            -ms-transform: 		scale(1.02);
+            -o-transform:       scale(1.02);
         }
     }
     #personal-category-option {
@@ -146,7 +154,11 @@
         -moz-transition:    $transition-03;
         -o-transition:      $transition-03;
         &:hover {
-            transform: scale(1.05);
+            transform:          scale(1.05);
+            -webkit-transform:  scale(1.05);
+            -moz-transform: 	scale(1.05);
+            -ms-transform: 		scale(1.05);
+            -o-transform:       scale(1.05);
             transition:         $transition-03;
             -webkit-transition: $transition-03;
             -moz-transition:    $transition-03;

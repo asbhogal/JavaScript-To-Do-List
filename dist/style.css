@@ -77,13 +77,22 @@ body {
 .app .list > .to-do-item .actions {
   display: inline-flex;
   transition: 0.3s all ease-in;
+  -webkit-transition: 0.3s all ease-in;
+  -moz-transition: 0.3s all ease-in;
+  -o-transition: 0.3s all ease-in;
 }
 .app .list > .to-do-item .actions button {
   transition: 0.3s all ease-in;
+  -webkit-transition: 0.3s all ease-in;
+  -moz-transition: 0.3s all ease-in;
+  -o-transition: 0.3s all ease-in;
 }
 .app .list > .to-do-item .actions button:hover {
   transform: scale(1.05);
   transition: 0.3s all ease-in;
+  -webkit-transition: 0.3s all ease-in;
+  -moz-transition: 0.3s all ease-in;
+  -o-transition: 0.3s all ease-in;
 }
 .app .list > .to-do-item input {
   width: 80%;
@@ -130,9 +139,15 @@ input[type=text] {
   padding: 15px 55px;
   cursor: pointer;
   transition: 0.3s all ease-in;
+  -webkit-transition: 0.3s all ease-in;
+  -moz-transition: 0.3s all ease-in;
+  -o-transition: 0.3s all ease-in;
 }
 #new-to-do-form [id*=option]:hover {
   transition: 0.3s all ease-in;
+  -webkit-transition: 0.3s all ease-in;
+  -moz-transition: 0.3s all ease-in;
+  -o-transition: 0.3s all ease-in;
   transform: scale(1.02);
 }
 #new-to-do-form #personal-category-option {
@@ -151,10 +166,16 @@ input[type=text] {
   border-radius: 5px;
   background-color: #ddd;
   transition: 0.3s all ease-in;
+  -webkit-transition: 0.3s all ease-in;
+  -moz-transition: 0.3s all ease-in;
+  -o-transition: 0.3s all ease-in;
 }
 #new-to-do-form input[type=submit]:hover {
   transform: scale(1.05);
   transition: 0.3s all ease-in;
+  -webkit-transition: 0.3s all ease-in;
+  -moz-transition: 0.3s all ease-in;
+  -o-transition: 0.3s all ease-in;
 }
 
 input[type=radio],
@@ -176,6 +197,9 @@ input[type=checkbox] {
   background-color: #541780;
   box-shadow: 0 20px 40px rgba(88, 20, 161, 0.1607843137);
   transition: 0.3s all ease-in;
+  -webkit-transition: 0.3s all ease-in;
+  -moz-transition: 0.3s all ease-in;
+  -o-transition: 0.3s all ease-in;
 }
 
 input:checked ~ .bubble::after {

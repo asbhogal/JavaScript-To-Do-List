@@ -54,12 +54,21 @@
             width: 100%;
             .actions {
                 display: inline-flex;
-                transition: $transition-03;
+                transition:         $transition-03;
+                -webkit-transition: $transition-03;
+                -moz-transition:    $transition-03;
+                -o-transition:      $transition-03;
                 button {
-                    transition: $transition-03;
+                    transition:         $transition-03;
+                    -webkit-transition: $transition-03;
+                    -moz-transition:    $transition-03;
+                    -o-transition:      $transition-03;
                     &:hover {
                     transform: scale(1.05);
-                    transition: $transition-03;
+                    transition:         $transition-03;
+                    -webkit-transition: $transition-03;
+                    -moz-transition:    $transition-03;
+                    -o-transition:      $transition-03;
                     }
                 }
             }
@@ -105,9 +114,15 @@
         border-radius: $border-radius;
         padding: 15px 55px;
         cursor: pointer;
-        transition: $transition-03;
+        transition:         $transition-03;
+        -webkit-transition: $transition-03;
+        -moz-transition:    $transition-03;
+        -o-transition:      $transition-03;
         &:hover {
-            transition: $transition-03;
+            transition:         $transition-03;
+            -webkit-transition: $transition-03;
+            -moz-transition:    $transition-03;
+            -o-transition:      $transition-03;
             transform: scale(1.02);
         }
     }
@@ -126,10 +141,16 @@
         padding: 10px 25px;
         border-radius: $border-radius;
         background-color: $secondary-color;
-        transition: $transition-03;
+        transition:         $transition-03;
+        -webkit-transition: $transition-03;
+        -moz-transition:    $transition-03;
+        -o-transition:      $transition-03;
         &:hover {
             transform: scale(1.05);
-            transition: $transition-03;
+            transition:         $transition-03;
+            -webkit-transition: $transition-03;
+            -moz-transition:    $transition-03;
+            -o-transition:      $transition-03;
         }
     }
 }
@@ -151,7 +172,10 @@ input[type="checkbox"] {
     &::after {
         background-color: $accent-color-2;
         box-shadow: 0 20px 40px #5814a129;
-        transition: $transition-03;
+        transition:         $transition-03;
+        -webkit-transition: $transition-03;
+        -moz-transition:    $transition-03;
+        -o-transition:      $transition-03;
     }
 }
 

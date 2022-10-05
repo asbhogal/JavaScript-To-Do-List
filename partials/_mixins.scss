@@ -6,3 +6,11 @@
     -moz-transition:    $transition-03;
     -o-transition:      $transition-03;
 }
+
+@mixin cross-browser-transform-set-small {
+    transform:          scale(1.02);
+    -webkit-transform:  scale(1.02);
+    -moz-transform: 	scale(1.02);
+    -ms-transform: 		scale(1.02);
+    -o-transform:       scale(1.02);
+}

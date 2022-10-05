@@ -1,3 +1,6 @@
+/****** COLORS ******/
+/****** BORDERS ******/
+/****** TRANSITIONS ******/
 @import url("https://fonts.googleapis.com/css2?family=Cantarell&family=Oxygen&family=Ubuntu:wght@300&display=swap");
 * {
   margin: 0;
@@ -16,11 +19,17 @@ body {
   height: 100vh;
 }
 
+/****** COLORS ******/
+/****** BORDERS ******/
+/****** TRANSITIONS ******/
 body {
   font-family: "Ubuntu", sans-serif;
   color: #e9e9e9;
 }
 
+/****** COLORS ******/
+/****** BORDERS ******/
+/****** TRANSITIONS ******/
 .app {
   flex-direction: column;
   align-items: center;

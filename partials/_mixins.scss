@@ -14,3 +14,11 @@
     -ms-transform: 		scale(1.02);
     -o-transform:       scale(1.02);
 }
+
+@mixin cross-browser-transform-set-large {
+    transform:          scale(1.05);
+    -webkit-transform:  scale(1.05);
+    -moz-transform: 	scale(1.05);
+    -ms-transform: 		scale(1.05);
+    -o-transform:       scale(1.05);
+}

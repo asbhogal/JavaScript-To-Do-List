@@ -61,12 +61,8 @@
                 button {
                     @include cross-browser-transition-set;
                     &:hover {
-                    transform:          scale(1.05);
-                    -webkit-transform:  scale(1.05);
-                    -moz-transform: 	scale(1.05);
-                    -ms-transform: 		scale(1.05);
-                    -o-transform:       scale(1.05);
-                    @include cross-browser-transition-set;
+                        @include cross-browser-transform-set-large;
+                        @include cross-browser-transition-set;
                     }
                 }
             }
@@ -135,11 +131,7 @@
         background-color: $secondary-color;
         @include cross-browser-transition-set;
         &:hover {
-            transform:          scale(1.05);
-            -webkit-transform:  scale(1.05);
-            -moz-transform: 	scale(1.05);
-            -ms-transform: 		scale(1.05);
-            -o-transform:       scale(1.05);
+            @include cross-browser-transform-set-large;
             @include cross-browser-transition-set;
         }
     }

@@ -2,6 +2,7 @@
   
 <h1>JavaScript To Do List</h1>
 
+![](https://api.checklyhq.com/v1/badges/checks/41381e23-a0d0-4053-adb9-d2af4c5c1809?style=for-the-badge&theme=dark) ![](https://api.checklyhq.com/v1/badges/checks/41381e23-a0d0-4053-adb9-d2af4c5c1809?style=for-the-badge&theme=dark&responseTime=true)
 ![GitHub deployments](https://img.shields.io/github/deployments/asbhogal/JavaScript-To-Do-List/production?label=DEPLOYMENT%20STATE&style=for-the-badge&labelColor=000) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/asbhogal/JavaScript-To-Do-List?style=for-the-badge&labelColor=000) ![GitHub repo size](https://img.shields.io/github/repo-size/asbhogal/JavaScript-To-Do-List?color=blueviolet&style=for-the-badge&labelColor=000)
 
 </div>

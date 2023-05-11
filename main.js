@@ -23,6 +23,7 @@ function addTask() {
     taskContainer.insertAdjacentHTML("beforeend", template);
     inputBox.value = "";
   }
+  saveTasks();
 }
 
 addBtn.addEventListener("click", addTask);
@@ -40,8 +41,29 @@ taskContainer.addEventListener("click", function (e) {
       : "/checked.svg";
     li.classList.toggle("app__container__task-section__list__item__checked");
   }
+
+  if (
+    e.target.classList.contains(
+      "app__container__task-section__list__item__right-content-icon"
+    )
+  ) {
+    const li = e.target.closest("li");
+    li.remove();
+  }
+  saveTasks();
 });
 
 inputBox.addEventListener("keyup", function (e) {
-    (e.keyCode === 13) && (e.preventDefault(), addTask());
-})
+  e.keyCode === 13 && (e.preventDefault(), addTask());
+  saveTasks();
+});
+
+function saveTasks() {
+  localStorage.setItem("tasks", taskContainer.innerHTML);
+}
+
+function loadTasks() {
+  taskContainer.innerHTML = localStorage.getItem("tasks");
+}
+
+loadTasks();

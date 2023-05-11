@@ -7,6 +7,8 @@
 A To Do List application which allows users to add and remove tasks, as well as keep track of tasks entered via Local Storage. This has been written using HTML5, CSS (SCSS) and JavaScript and built using Vite. This repo is currently under development.
 
 <strong>:heavy_check_mark: Features</strong>
+ - Event delegation to attach event listener to parent element (using conditionals)
+ - keyUp event listener leverage to allow tasks to be added using the 'Enter' button
  - Modern UI
  - Analogous color scheme
  - BEM methodology incorporated

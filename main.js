@@ -10,39 +10,38 @@ function addTask() {
   if (inputBox.value === "") {
     alert("Please enter a task");
   } else {
-    let li = document.createElement("li");
-    li.classList.add("app__container__task-section__list__item");
+    const template = `
+      <li class="app__container__task-section__list__item">
+        <div class="app__container__task-section__list__item__left-content">
+          <img class="app__container__task-section__list__item__left-content__icon" src="/unchecked.svg" />
+          <span class="app__container__task-section__list__item__left-content__text">${inputBox.value}</span>
+        </div>
+        <img class="app__container__task-section__list__item__right-content-icon" src="/close.svg" />
+      </li>
+    `;
 
-    let leftContent = document.createElement("div");
-    leftContent.classList.add(
-      "app__container__task-section__list__item__left-content"
-    );
-
-    let leftContentIcon = document.createElement("img");
-    leftContentIcon.classList.add(
-      "app__container__task-section__list__item__left-content__icon"
-    );
-    leftContentIcon.src = "/unchecked.svg";
-
-    let leftContentText = document.createElement("span");
-    leftContentText.classList.add(
-      "app__container__task-section__list__item__left-content__text"
-    );
-    leftContentText.innerHTML = inputBox.value;
-
-    let rightContentIcon = document.createElement("img");
-    rightContentIcon.classList.add(
-      "app__container__task-section__list__item__right-content-icon"
-    );
-    rightContentIcon.src = "/close.svg";
-
-    leftContent.appendChild(leftContentIcon);
-    leftContent.appendChild(leftContentText);
-    li.appendChild(leftContent);
-    li.appendChild(rightContentIcon);
-    taskContainer.appendChild(li);
+    taskContainer.insertAdjacentHTML("beforeend", template);
     inputBox.value = "";
   }
 }
 
 addBtn.addEventListener("click", addTask);
+
+taskContainer.addEventListener("click", function (e) {
+  if (
+    e.target.classList.contains(
+      "app__container__task-section__list__item__left-content__icon"
+    )
+  ) {
+    const li = e.target.closest("li");
+    const img = e.target;
+    img.src = img.src.includes("/checked.svg")
+      ? "/unchecked.svg"
+      : "/checked.svg";
+    li.classList.toggle("app__container__task-section__list__item__checked");
+  }
+});
+
+inputBox.addEventListener("keyup", function (e) {
+    (e.keyCode === 13) && (e.preventDefault(), addTask());
+})

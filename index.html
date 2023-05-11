@@ -8,10 +8,24 @@
     <script type="module" src="/main.js" defer></script>
   </head>
   <body>
-    <div class="app">
-      <div class="app__container">
+    <main class="app">
+      <section class="app__container">
         <h1 class="app__container__heading">What's on your list for today?</h1>
-      </div>
-    </div>
+        <div class="app__container__input-box">
+          <input
+            type="text"
+            class="app__container__input-box__input"
+            placeholder="Enter your task..."
+          />
+          <button class="app__container__input-box__button">
+            <img
+              class="app__container__input-box__button__icon"
+              src="/plus.svg"
+              alt="A plus icon"
+            />
+          </button>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

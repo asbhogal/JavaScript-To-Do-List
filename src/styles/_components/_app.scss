@@ -5,14 +5,14 @@
   @include flex-alignment;
   height: 100vh;
   width: 100%;
-  background-color: $charleston-green;
+  background-color: #283447;
   color: $light-gray;
   padding: 0 30px;
   &__container {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    background: $japanese-indigo;
+    background: #1E2030;
     width: 100%;
     padding: 30px;
     border-radius: 10px;
@@ -69,7 +69,7 @@
           align-items: center;
           justify-content: space-between;
           gap: 10px;
-          background-color: $charleston-green;
+          background-color: #1E2030;
           padding: 10px;
           border-radius: 10px;
           &__checked {

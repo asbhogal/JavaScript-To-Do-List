@@ -8,6 +8,7 @@ A To Do List application which allows users to add and remove tasks, as well as 
 
 <strong>:heavy_check_mark: Features</strong>
  - Modern UI
+ - Analogous color scheme
  - BEM methodology incorporated
  - Locally hosted fonts
  - Fully responsive

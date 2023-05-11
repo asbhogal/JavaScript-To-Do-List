@@ -1,17 +1,18 @@
+@use "../_partials/mixins" as *;
+@use "../_partials/variables" as *;
+
 .app {
-  display: flex;
+  @include flex-alignment;
   height: 100vh;
   width: 100%;
-  justify-content: center;
-  align-items: center;
-  background-color: #262837;
-  color: #d3d3d3;
+  background-color: $charleston-green;
+  color: $light-gray;
   padding: 0 30px;
   &__container {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    background: #2c3c45;
+    background: $japanese-indigo;
     width: 100%;
     padding: 30px;
     border-radius: 10px;
@@ -22,29 +23,26 @@
       text-align: center;
     }
     &__input-box {
-      display: flex;
-      align-items: center;
+      @include flex-alignment;
       gap: 15px;
       &__input {
-        background-color: #262837;
-        color: #d3d3d3;
+        background-color: $charleston-green;
+        color: $light-gray;
         outline: none;
-        border: 0.5px solid #262837;
+        border: 0.5px solid $charleston-green;
         border-radius: 10px;
         padding: 12px 10px;
         width: 100%;
         cursor: pointer;
-        transition: 0.3s all ease-in;
+        transition: $transition-03;
         &:hover,
         &:focus {
-          border: 0.5px solid #d3d3d3;
-          transition: 0.3s all ease-in;
+          border: 0.5px solid $light-gray;
+          transition: $transition-03;
         }
       }
       &__button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-alignment;
         width: 40px;
         height: 40px;
         background-color: transparent;
@@ -67,14 +65,14 @@
         gap: 10px;
         width: 100%;
         &__item {
-          background-color: #262837;
+          background-color: $charleston-green;
           padding: 10px;
           border-radius: 10px;
         }
         &__separator {
-            background-color: #d3d3d3;
-            height: 0.5px;
-            width: 100%;
+          background-color: $light-gray;
+          height: 0.5px;
+          width: 100%;
         }
       }
     }

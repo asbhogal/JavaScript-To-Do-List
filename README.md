@@ -7,14 +7,16 @@
 A To Do List application which allows users to add and remove tasks, as well as keep track of tasks entered via Local Storage. This has been written using HTML5, CSS (SCSS) and JavaScript and built using Vite. This repo is currently under development.
 
 <strong>:heavy_check_mark: Features</strong>
- - Event delegation to attach event listener to parent element (using conditionals)
- - keyUp event listener leverage to allow tasks to be added using the 'Enter' button
- - Modern UI
- - Analogous color scheme
- - BEM methodology incorporated
- - Locally hosted fonts
- - Fully responsive
- - Optimised for the web
+
+- Event delegation to attach event listener to parent element (using conditionals)
+- keyUp event listener leverage to allow tasks to be added using the 'Enter' button
+- Leverages Local Storage to keep track of tasks added, completed and deleted
+- Modern UI
+- Analogous color scheme
+- BEM methodology incorporated
+- Locally hosted fonts
+- Fully responsive
+- Optimised for the web
 
 <strong>:nerd_face: Stacks &#38; Tools Used:</strong><br>
 <br>
@@ -26,4 +28,5 @@ A To Do List application which allows users to add and remove tasks, as well as 
 <a target="_blank" rel="noopener noreferrer" href="https://github.com/vitejs/vite/blob/main/docs/public/logo.svg"><img src="https://github.com/vitejs/vite/blob/main/docs/public/logo.svg" alt="Webpack logo" width="50" height="50" style="max-width:100%;"></a>
 
 <strong>:link: Links</strong><br>
- - <a target="_blank" href="https://javascript-to-do-list-theta.vercel.app/">To Do App</a>
+
+- <a target="_blank" href="https://javascript-to-do-list-theta.vercel.app/">To Do App</a>

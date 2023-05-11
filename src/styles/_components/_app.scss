@@ -4,6 +4,7 @@
   width: 100%;
   justify-content: center;
   align-items: center;
+  background-color: #262837;
   color: #d3d3d3;
   padding: 0 30px;
   &__container {
@@ -15,7 +16,7 @@
     justify-content: center;
     max-width: 540px;
     &__heading {
-        font-size: 21px;
+      font-size: 21px;
     }
   }
 }
